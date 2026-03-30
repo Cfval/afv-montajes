@@ -1,0 +1,472 @@
+{
+  "metadata": {
+    "siteName": "AFV Cocinas",
+    "siteTitle": "AFV Cocinas — Kitchen Installation & Design in Alicante",
+    "siteDescription": "Specialists in kitchen installation, design and renovation in the province of Alicante. Over 15 years of experience. Free no-obligation quote.",
+    "ogLocale": "en_GB",
+    "ogImageAlt": "AFV Cocinas — Kitchen Installation & Design in Alicante"
+  },
+  "navbar": {
+    "home": "Home",
+    "kitchens": "Kitchens",
+    "gallery": "Gallery",
+    "about": "About me",
+    "blog": "Blog",
+    "contact": "Contact",
+    "budgetCta": "Quote",
+    "budgetCtaMobile": "Request a quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Professional kitchen installation\nin the province of Alicante.",
+    "navHeading": "Navigation",
+    "contactHeading": "Contact",
+    "location": "Province of Alicante, Spain",
+    "requestQuote": "Request a quote →",
+    "copyright": "© {year} AFV Cocinas. All rights reserved.",
+    "links": {
+      "home": "Home",
+      "kitchens": "Kitchens",
+      "gallery": "Gallery",
+      "about": "About me",
+      "contact": "Contact"
+    },
+    "legal": {
+      "notice": "Legal notice",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    }
+  },
+  "whatsapp": {
+    "tooltip": "Let's talk?",
+    "ariaLabel": "Contact via WhatsApp",
+    "message": "Hello%2C%20I%20am%20interested%20in%20requesting%20a%20quote%20for%20my%20kitchen."
+  },
+  "home": {
+    "meta": {
+      "title": "Kitchen Installation & Design in Alicante",
+      "description": "Specialists in kitchen installation, renovation and design in Alicante. Over 15 years of experience and 500 completed projects. Free no-obligation quote.",
+      "ogTitle": "AFV Cocinas — Kitchen Installation & Design in Alicante",
+      "ogDescription": "Specialists in kitchen installation, renovation and design in Alicante. Over 15 years of experience."
+    },
+    "hero": {
+      "tag": "Installation · Design · Renovation",
+      "headline": "Your kitchen",
+      "headlineEm": "made to measure",
+      "description": "We design and install kitchens across the province of Alicante. Quality, precision and attention to detail in every project.",
+      "cta": "Get a quote →"
+    },
+    "services": {
+      "tag": "Services",
+      "heading": "What we do",
+      "assembly": {
+        "title": "Kitchen Installation",
+        "description": "Professional installation with millimetre precision. From material delivery to the final adjustment, we guarantee a flawless fit."
+      },
+      "design": {
+        "title": "Full Design",
+        "description": "We create the space you have in mind. Personalised advice on layout, materials, finishes and appliances for your ideal kitchen."
+      },
+      "sales": {
+        "title": "Direct Sales",
+        "description": "Direct access to the best brands in the industry. Top-quality furniture, worktops and appliances at the best price, with no middlemen."
+      }
+    },
+    "parallax": {
+      "phrase1": "Every detail matters",
+      "phrase2": "Quality you can see and feel"
+    },
+    "featuredWork": {
+      "tag": "Portfolio",
+      "heading": "Recent projects",
+      "viewAll": "View all projects →"
+    },
+    "stats": {
+      "yearsLabel": "Years of experience",
+      "kitchensLabel": "Kitchens installed",
+      "satisfactionLabel": "Satisfied clients",
+      "areaLabel": "Working area"
+    },
+    "brands": {
+      "tag": "Partner brands"
+    },
+    "cta": {
+      "tag": "Let's start",
+      "heading": "Your perfect kitchen",
+      "headingEm": "is waiting",
+      "description": "Tell us about your project and we'll provide a personalised quote with no obligation. We reply within 48 hours.",
+      "button": "Request a quote →"
+    }
+  },
+  "sobreMi": {
+    "meta": {
+      "title": "About Me",
+      "description": "Over 15 years installing and designing kitchens in the province of Alicante. Meet the professional behind AFV Cocinas.",
+      "ogTitle": "About Me | AFV Cocinas",
+      "ogDescription": "Over 15 years installing and designing kitchens in the province of Alicante. Meet the professional behind AFV Cocinas.",
+      "ogImageAlt": "AFV Cocinas — About me"
+    },
+    "hero": {
+      "tag": "About me",
+      "heading": "Who I am"
+    },
+    "story": {
+      "tag": "My story",
+      "heading": "Over 15 years transforming kitchens in Alicante",
+      "p1": "My name is Alberto and I have spent over 15 years dedicated to kitchen installation and design in the province of Alicante. What began as a trade learned alongside my father has become my passion and my way of life.",
+      "p2": "Over the years I have installed more than 500 kitchens, from intimate renovations in small flats to large installations in luxury homes. Every project is unique, and I am committed to treating it as if it were my own home.",
+      "p3": "I work directly with the best brands on the market, which allows me to offer premium-quality materials at competitive prices. No middlemen, no surprises."
+    },
+    "stats": {
+      "yearsLabel": "Years of experience",
+      "kitchensLabel": "Kitchens installed",
+      "areaLabel": "Working area"
+    },
+    "values": {
+      "tag": "My values",
+      "heading": "Why choose me",
+      "quality": {
+        "title": "Quality",
+        "description": "We use premium-quality materials and precise installation techniques to guarantee a lasting, defect-free result."
+      },
+      "punctuality": {
+        "title": "Punctuality",
+        "description": "We respect agreed deadlines. We know that a home renovation is disruptive, and we are committed to minimising that disruption."
+      },
+      "trust": {
+        "title": "Trust",
+        "description": "Over 15 years of experience back our work. We operate with full transparency — no surprises in the final quote."
+      },
+      "detail": {
+        "title": "Attention to detail",
+        "description": "Every millimetre counts. From perfect levelling to the finish on the plinths, we take care of every element of the installation."
+      }
+    },
+    "process": {
+      "tag": "How we work",
+      "heading": "The work process",
+      "contact": {
+        "title": "Contact",
+        "description": "Tell us about your project and we take note of your needs."
+      },
+      "measure": {
+        "title": "Measurement",
+        "description": "We visit the space and take exact measurements for the quote."
+      },
+      "quote": {
+        "title": "Quote",
+        "description": "Receive a detailed quote with no surprises or hidden costs."
+      },
+      "install": {
+        "title": "Installation",
+        "description": "We carry out the installation with precision within the agreed timeframe."
+      },
+      "delivery": {
+        "title": "Handover",
+        "description": "Final review with you and handover of your perfect kitchen."
+      }
+    },
+    "cta": {
+      "heading": "Shall we talk about your kitchen?",
+      "description": "Tell me about your project and I'll give you my professional opinion with no obligation. I'm here to help.",
+      "button": "Request a quote →"
+    }
+  },
+  "cocinas": {
+    "meta": {
+      "title": "Our Kitchens — Portfolio",
+      "description": "Explore our portfolio of kitchens installed in Alicante: modern, rustic, minimalist and island kitchens. Over 500 completed projects.",
+      "ogTitle": "Our Kitchens — Portfolio | AFV Cocinas",
+      "ogDescription": "Explore our portfolio of kitchens installed in Alicante: modern, rustic, minimalist and island kitchens.",
+      "ogImageAlt": "AFV Cocinas — Kitchen portfolio"
+    },
+    "hero": {
+      "tag": "Portfolio",
+      "heading": "Our Kitchens",
+      "description": "Every kitchen is a unique project. Explore our portfolio and find inspiration for yours."
+    },
+    "whyUs": {
+      "tag": "Why choose us",
+      "heading": "What sets us apart",
+      "premium": {
+        "title": "Premium Quality",
+        "description": "We only work with top-of-the-range materials. Every kitchen is built to last decades without losing its original appearance."
+      },
+      "function": {
+        "title": "Functionality",
+        "description": "We design the space with your daily use in mind. Ergonomics, layout and practicality are our priority."
+      },
+      "custom": {
+        "title": "Custom Design",
+        "description": "No two projects are the same. We adapt every kitchen to your space, your taste and your budget with complete freedom to personalise."
+      },
+      "price": {
+        "title": "Competitive Pricing",
+        "description": "By working directly with manufacturers, we cut out middlemen and offer you the best prices on the market."
+      }
+    },
+    "approach": {
+      "tag": "Our approach",
+      "heading": "We personalise every last detail",
+      "body": "Every kitchen we install begins with a conversation. We understand your space, your lifestyle and your vision before proposing any solution. The result is always a unique space, designed for you.",
+      "galleryButton": "View gallery →"
+    },
+    "beforeAfter": {
+      "tag": "Transformations",
+      "heading": "The change speaks for itself"
+    },
+    "portfolio": {
+      "tag": "Completed projects",
+      "heading": "Explore the portfolio"
+    },
+    "testimonials": {
+      "tag": "Testimonials",
+      "heading": "What our clients say"
+    },
+    "bottomCta": {
+      "heading": "Can't find what you're looking for?",
+      "description": "Tell us your idea and we'll make it a reality. We work to measure, with no design limits.",
+      "button": "Tell us about your project →"
+    },
+    "styleLabels": {
+      "moderna": "Modern",
+      "rustica": "Rustic",
+      "minimalista": "Minimalist",
+      "con-isla": "With island",
+      "clasica": "Classic"
+    },
+    "filters": {
+      "todas": "All",
+      "moderna": "Modern",
+      "rustica": "Rustic",
+      "minimalista": "Minimalist",
+      "con-isla": "With island",
+      "clasica": "Classic"
+    },
+    "detail": {
+      "breadcrumbHome": "Home",
+      "breadcrumbKitchens": "Kitchens",
+      "techSheet": "Technical sheet",
+      "styleField": "Style",
+      "metersField": "Linear metres",
+      "materialsField": "Materials",
+      "durationField": "Installation time",
+      "locationField": "Location",
+      "similarCta": "I want something similar →",
+      "relatedTag": "You might also like",
+      "relatedHeading": "Similar projects"
+    }
+  },
+  "galeria": {
+    "meta": {
+      "title": "Kitchen Gallery",
+      "description": "Gallery of kitchens installed by AFV Cocinas in the province of Alicante. Over 500 completed projects.",
+      "ogTitle": "Kitchen Gallery | AFV Cocinas",
+      "ogDescription": "Gallery of kitchens installed by AFV Cocinas in the province of Alicante. Over 500 completed projects.",
+      "ogImageAlt": "AFV Cocinas — Gallery"
+    },
+    "tag": "Completed projects",
+    "heading": "Gallery",
+    "description": "A selection of our most recent projects in the province of Alicante."
+  },
+  "presupuesto": {
+    "meta": {
+      "title": "Request a Quote",
+      "description": "Request a personalised quote for your kitchen in Alicante. No obligation. We reply within 48 hours.",
+      "ogTitle": "Request a Quote | AFV Cocinas",
+      "ogDescription": "Request a personalised quote for your kitchen in Alicante. No obligation. We reply within 48 hours.",
+      "ogImageAlt": "AFV Cocinas — Request a Quote"
+    },
+    "tag": "Quote",
+    "heading": "Request your quote",
+    "description": "Tell us about your project and we'll send you a detailed, personalised quote.",
+    "trustNoCommitment": "No obligation",
+    "trust48h": "Reply within 48h",
+    "trustFree": "Free quote",
+    "calculatorTag": "Indicative calculator",
+    "calculatorHeading": "How much could your kitchen cost?",
+    "calculatorDescription": "Answer 4 quick questions and get an instant indicative estimate."
+  },
+  "contacto": {
+    "meta": {
+      "title": "Contact",
+      "description": "Contact AFV Cocinas for your kitchen installation or renovation project in the province of Alicante. Phone, email and contact form.",
+      "ogTitle": "Contact | AFV Cocinas",
+      "ogDescription": "Contact AFV Cocinas for your kitchen installation or renovation project in the province of Alicante.",
+      "ogImageAlt": "AFV Cocinas — Contact"
+    },
+    "tag": "Contact",
+    "heading": "Let's talk about your kitchen",
+    "infoTag": "Contact information",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "scheduleLabel": "Hours",
+    "scheduleValue": "Mon–Fri 8:00–19:00 · Sat 9:00–14:00",
+    "areaLabel": "Working area",
+    "areaValue": "Province of Alicante",
+    "whatsappCta": "Message us on WhatsApp",
+    "whatsappMessage": "Hello%2C%20I%20would%20like%20information%20about%20your%20services.",
+    "formHeading": "Send us a message",
+    "mapPlaceholder": "Location map — Province of Alicante",
+    "mapNote": "Google Maps will be integrated here"
+  },
+  "blog": {
+    "meta": {
+      "title": "Blog — Tips & Trends",
+      "description": "Tips, trends and guides on kitchen design and renovation in Alicante. The AFV Cocinas blog.",
+      "ogTitle": "Blog — Tips & Trends | AFV Cocinas",
+      "ogDescription": "Tips, trends and guides on kitchen design and renovation in Alicante.",
+      "ogImageAlt": "AFV Cocinas — Blog"
+    },
+    "tag": "Blog",
+    "heading": "Tips and trends",
+    "description": "Practical guides, inspiration and news from the world of kitchens, brought to you by AFV Cocinas.",
+    "noPosts": "No articles published yet.",
+    "readArticle": "Read article →",
+    "backToBlog": "← Back to blog",
+    "backToBlogShort": "← Blog"
+  },
+  "forms": {
+    "contact": {
+      "nameLabel": "Name *",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "you@email.com",
+      "messageLabel": "Message *",
+      "messagePlaceholder": "How can we help you?",
+      "submitButton": "Send message →",
+      "sending": "Sending...",
+      "successTitle": "Message sent",
+      "successBody": "We'll get back to you as soon as possible.",
+      "sendAnother": "Send another message",
+      "errorBanner": "Error sending. Please try again.",
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Invalid email",
+        "messageTooShort": "Message must be at least 10 characters"
+      }
+    },
+    "budget": {
+      "sectionPersonal": "Personal details",
+      "sectionKitchen": "About your kitchen",
+      "sectionFiles": "Attachments (optional)",
+      "nameLabel": "Full name *",
+      "namePlaceholder": "John Smith",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "john@email.com",
+      "phoneLabel": "Phone *",
+      "phonePlaceholder": "+34 600 000 000",
+      "cityLabel": "Town / City *",
+      "cityPlaceholder": "Alicante, Elche, Torrevieja...",
+      "serviceTypeLabel": "Type of service *",
+      "serviceTypeDefault": "Select an option",
+      "serviceMontaje": "Installation only",
+      "serviceReforma": "Full renovation",
+      "serviceDisenoMontaje": "Design + installation",
+      "serviceDiseno": "Design only",
+      "serviceOtro": "Other",
+      "metersLabel": "Approximate metres",
+      "metersPlaceholder": "e.g. 4.5",
+      "appliancesLabel": "Do you have appliances? *",
+      "appliancesYes": "Yes, I have them",
+      "appliancesNo": "No, I need them",
+      "appliancesSome": "Some of them",
+      "descriptionLabel": "Project description",
+      "descriptionPlaceholder": "Tell us what you have in mind: style, layout, materials...",
+      "budgetRangeLabel": "Indicative budget *",
+      "budgetRangeDefault": "Select a range",
+      "budgetMenos3000": "Less than €3,000",
+      "budget3000a6000": "€3,000 – €6,000",
+      "budget6000a10000": "€6,000 – €10,000",
+      "budgetMas10000": "More than €10,000",
+      "budgetNoSe": "I don't know yet",
+      "filesLabel": "Photos or plans",
+      "filesDragText": "Drag files here or",
+      "filesClickText": "click to select",
+      "filesHint": "JPG, PNG, PDF · Max 5 files · Max 5MB each",
+      "filesRemoveAll": "Remove all",
+      "submitButton": "Submit quote request →",
+      "sending": "Sending...",
+      "successTitle": "Request sent!",
+      "successBody": "We'll contact you within 48 hours. Check your inbox.",
+      "sendAnother": "Submit another request",
+      "errorBanner": "Error sending. Please try again or call us directly.",
+      "privacyText": "By submitting this form you accept our",
+      "privacyLink": "privacy policy",
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Invalid email",
+        "phoneRequired": "Phone is required",
+        "cityRequired": "Town / city is required",
+        "serviceTypeRequired": "Please select a service type",
+        "appliancesRequired": "Please select an option",
+        "budgetRequired": "Please select an indicative range",
+        "filesTooMany": "Maximum {max} files",
+        "fileTypeInvalid": "Only JPG, PNG and PDF files are allowed",
+        "fileTooLarge": "Each file must be smaller than {max}MB"
+      }
+    }
+  },
+  "calculator": {
+    "stepOf": "Step {step} of {total}",
+    "step1": {
+      "question": "How many linear metres is your kitchen?",
+      "hint": "Add up all the runs: the main wall, sides and island if you have one.",
+      "unit": "metres",
+      "minLabel": "2m",
+      "maxLabel": "10m+"
+    },
+    "step2": {
+      "question": "What type of worktop do you prefer?",
+      "hint": "The worktop material has a significant impact on the final price.",
+      "laminadoLabel": "Laminate",
+      "laminadoRange": "€150 – €250/m",
+      "silestoneLabel": "Silestone",
+      "silestoneRange": "€400 – €600/m",
+      "granitoLabel": "Granite",
+      "granitoRange": "€350 – €500/m",
+      "dektonLabel": "Dekton",
+      "dektonRange": "€500 – €700/m"
+    },
+    "step3": {
+      "question": "Do we include appliances?",
+      "hint": "Oven, hob, extractor fan and integrated fridge.",
+      "mediaLabel": "Yes, mid-range",
+      "mediaSublabel": "Oven, hob, extractor, fridge",
+      "altaLabel": "Yes, high-end",
+      "altaSublabel": "Integrated premium brands",
+      "noLabel": "No appliances",
+      "noSublabel": "I have them or will buy separately"
+    },
+    "step4": {
+      "question": "What type of work do you need?",
+      "hint": "The scope of work is the factor that most influences the total price.",
+      "montajeLabel": "Installation only",
+      "montajeSublabel": "Install the units you already have",
+      "montajeMueblesLabel": "Units + installation",
+      "montajeMueblesSublabel": "New units + installation included",
+      "reformaLabel": "Full renovation",
+      "reformaSublabel": "Demolition, building work, units and installation"
+    },
+    "result": {
+      "tag": "Indicative estimate",
+      "intro": "Your kitchen could cost between",
+      "disclaimer": "Indicative price. The final quote depends on many factors: condition of the existing installation, access, specific materials and other details particular to your home.",
+      "exactCta": "Get an exact quote →",
+      "recalculate": "Recalculate"
+    },
+    "nav": {
+      "prev": "← Previous",
+      "next": "Next →",
+      "viewResult": "View result"
+    }
+  },
+  "cookies": {
+    "ariaLabel": "Cookie notice",
+    "text": "We use our own cookies to improve your browsing experience.",
+    "moreInfo": "More information",
+    "accept": "Accept all",
+    "reject": "Reject"
+  }
+}

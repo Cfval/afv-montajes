@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import editorialImg from '../../../../public/images/cocinas/detalle-editorial.jpg'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'

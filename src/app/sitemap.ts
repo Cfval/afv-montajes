@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next'
 import { kitchens } from '@/data/kitchens'
-import { getAllPosts } from '@/lib/mdx'
 
 const BASE = 'https://afvcocinas.es'
 
@@ -14,11 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = locales.flatMap((locale) => [
     { url: url('/', locale), lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1 },
     { url: url('/cocinas', locale), lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
-    { url: url('/presupuesto', locale), lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: url('/galeria', locale), lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: url('/blog', locale), lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: url('/sobre-mi', locale), lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: url('/contacto', locale), lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
   ])
 
   // Legal pages — Spanish only (content is always in Spanish)
@@ -36,14 +32,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   )
 
-  const blogRoutes: MetadataRoute.Sitemap = locales.flatMap((locale) =>
-    getAllPosts().map((p) => ({
-      url: url(`/blog/${p.slug}`, locale),
-      lastModified: new Date(p.date),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    })),
-  )
-
-  return [...staticRoutes, ...legalRoutes, ...kitchenRoutes, ...blogRoutes]
+  return [...staticRoutes, ...legalRoutes, ...kitchenRoutes]
 }

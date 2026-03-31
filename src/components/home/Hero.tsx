@@ -15,9 +15,3 @@ export default function Hero() {
     </section>
   )
 }
-          background: 'linear-gradient(to bottom, transparent, #0E0E0C)',
-        }}
-      />
-    </section>
-  )
-}

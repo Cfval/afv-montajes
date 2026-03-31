@@ -59,7 +59,7 @@ export default async function KitchenPage({ params }: Props) {
         <nav style={{ fontFamily: 'var(--font-sans)', fontSize: '12px', color: '#6B6A60', display: 'flex', gap: '8px', alignItems: 'center' }}>
           <Link href="/" style={{ color: '#6B6A60', textDecoration: 'none' }}>{t('breadcrumbHome')}</Link>
           <span>›</span>
-          <Link href="/cocinas" style={{ color: '#6B6A60', textDecoration: 'none' }}>{t('breadcrumbKitchens')}</Link>
+          <Link href="/trabajos" style={{ color: '#6B6A60', textDecoration: 'none' }}>{t('breadcrumbKitchens')}</Link>
           <span>›</span>
           <span style={{ color: '#9C9A8E' }}>{kitchen.name}</span>
         </nav>

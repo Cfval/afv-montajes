@@ -9,7 +9,7 @@ export default function Footer() {
 
   const footerLinks = [
     { href: '/' as const, label: t('links.home') },
-    { href: '/cocinas' as const, label: t('links.kitchens') },
+    { href: '/trabajos' as const, label: t('links.kitchens') },
     { href: '/galeria' as const, label: t('links.gallery') },
     { href: '/sobre-mi' as const, label: t('links.about') },
   ]

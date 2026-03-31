@@ -25,7 +25,7 @@ function KitchenItem({
 
   return (
     <Link
-      href={`/cocinas/${kitchen.slug}`}
+      href={`/trabajos/${kitchen.slug}`}
       className={`relative overflow-hidden block group ${className ?? ''}`}
       style={{ minHeight }}
       onMouseEnter={() => setHovered(true)}
@@ -165,7 +165,7 @@ export default function FeaturedWork() {
         {/* Footer link */}
         <div className="mt-8 flex justify-end">
           <Link
-            href="/cocinas"
+            href="/trabajos"
             style={{
               fontFamily: 'var(--font-sans)',
               fontWeight: 500,

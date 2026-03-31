@@ -8,7 +8,7 @@ export default function CocinasLink() {
 
   return (
     <Link
-      href="/cocinas#portfolio"
+      href="/trabajos#portfolio"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{

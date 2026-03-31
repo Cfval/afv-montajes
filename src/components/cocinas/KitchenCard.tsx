@@ -12,7 +12,7 @@ export default function KitchenCard({ kitchen }: { kitchen: Kitchen }) {
 
   return (
     <Link
-      href={`/cocinas/${kitchen.slug}`}
+      href={`/trabajos/${kitchen.slug}`}
       className="relative block overflow-hidden group"
       style={{ aspectRatio: '4/3', display: 'block' }}
       onMouseEnter={() => setHovered(true)}

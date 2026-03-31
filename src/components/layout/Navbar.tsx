@@ -13,7 +13,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navLinks = [
-    { href: '/cocinas' as const, label: t('kitchens') },
+    { href: '/trabajos' as const, label: t('kitchens') },
     { href: '/galeria' as const, label: t('gallery') },
   ]
 

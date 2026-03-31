@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: t('ogTitle'),
       description: t('ogDescription'),
-      url: locale === 'es' ? 'https://afvcocinas.es/cocinas' : 'https://afvcocinas.es/en/cocinas',
+      url: locale === 'es' ? 'https://afvcocinas.es/trabajos' : 'https://afvcocinas.es/en/trabajos',
       images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: t('ogImageAlt') }],
     },
     twitter: { title: t('ogTitle'), description: t('ogDescription') },

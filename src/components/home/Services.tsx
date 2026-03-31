@@ -7,15 +7,6 @@ const serviceIcons = [
   <svg key="assembly" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
   </svg>,
-  <svg key="design" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M12 20h9" />
-    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-  </svg>,
-  <svg key="sales" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
-    <line x1="3" y1="6" x2="21" y2="6" />
-    <path d="M16 10a4 4 0 0 1-8 0" />
-  </svg>,
 ]
 
 const cardVariants = {
@@ -32,8 +23,6 @@ export default function Services() {
 
   const services = [
     { title: t('assembly.title'), description: t('assembly.description'), icon: serviceIcons[0] },
-    { title: t('design.title'), description: t('design.description'), icon: serviceIcons[1] },
-    { title: t('sales.title'), description: t('sales.description'), icon: serviceIcons[2] },
   ]
 
   return (
@@ -71,7 +60,7 @@ export default function Services() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-6 max-w-2xl">
           {services.map((service, i) => (
             <motion.div
               key={service.title}

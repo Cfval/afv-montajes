@@ -7,14 +7,8 @@
     "ogImageAlt": "AFV Cocinas — Montaje y Diseño de Cocinas en Alicante"
   },
   "navbar": {
-    "home": "Inicio",
-    "kitchens": "Cocinas",
+    "kitchens": "Trabajos",
     "gallery": "Galería",
-    "about": "Sobre mí",
-    "blog": "Blog",
-    "contact": "Contacto",
-    "budgetCta": "Presupuesto",
-    "budgetCtaMobile": "Solicitar presupuesto",
     "openMenu": "Abrir menú",
     "closeMenu": "Cerrar menú"
   },
@@ -23,14 +17,12 @@
     "navHeading": "Navegación",
     "contactHeading": "Contacto",
     "location": "Provincia de Alicante, España",
-    "requestQuote": "Solicitar presupuesto →",
     "copyright": "© {year} AFV Cocinas. Todos los derechos reservados.",
     "links": {
       "home": "Inicio",
       "kitchens": "Cocinas",
       "gallery": "Galería",
-      "about": "Sobre mí",
-      "contact": "Contacto"
+      "about": "Sobre mí"
     },
     "legal": {
       "notice": "Aviso legal",
@@ -63,14 +55,6 @@
       "assembly": {
         "title": "Montaje de Cocinas",
         "description": "Instalación profesional con precisión milimétrica. Desde la recepción del material hasta el último ajuste, garantizamos un montaje impecable."
-      },
-      "design": {
-        "title": "Diseño Integral",
-        "description": "Creamos el espacio que imaginas. Asesoramiento personalizado en distribución, materiales, acabados y electrodomésticos para tu cocina ideal."
-      },
-      "sales": {
-        "title": "Venta Directa",
-        "description": "Acceso directo a las mejores marcas del sector. Muebles, encimeras y electrodomésticos de primera calidad al mejor precio, sin intermediarios."
       }
     },
     "parallax": {

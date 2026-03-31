@@ -13,12 +13,8 @@ export default function Navbar() {
   const pathname = usePathname()
 
   const navLinks = [
-    { href: '/' as const, label: t('home') },
     { href: '/cocinas' as const, label: t('kitchens') },
     { href: '/galeria' as const, label: t('gallery') },
-    { href: '/sobre-mi' as const, label: t('about') },
-    { href: '/blog' as const, label: t('blog') },
-    { href: '/contacto' as const, label: t('contact') },
   ]
 
   return (
@@ -83,15 +79,6 @@ export default function Navbar() {
               )}
             </div>
 
-            {/* CTA desktop */}
-            <Link
-              href="/presupuesto"
-              className="btn-primary hidden md:inline-flex items-center"
-              style={{ padding: '10px 24px' }}
-            >
-              {t('budgetCta')}
-            </Link>
-
             {/* Hamburger button */}
             <button
               className="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
@@ -152,14 +139,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-
-              <Link
-                href="/presupuesto"
-                onClick={() => setMenuOpen(false)}
-                className="btn-primary mt-4 inline-flex items-center"
-              >
-                {t('budgetCtaMobile')}
-              </Link>
 
               {/* Language switcher — mobile */}
               <div className="flex items-center gap-2 mt-2"

@@ -7,14 +7,8 @@
     "ogImageAlt": "AFV Cocinas — Kitchen Installation & Design in Alicante"
   },
   "navbar": {
-    "home": "Home",
-    "kitchens": "Kitchens",
+    "kitchens": "Work",
     "gallery": "Gallery",
-    "about": "About me",
-    "blog": "Blog",
-    "contact": "Contact",
-    "budgetCta": "Quote",
-    "budgetCtaMobile": "Request a quote",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -23,14 +17,12 @@
     "navHeading": "Navigation",
     "contactHeading": "Contact",
     "location": "Province of Alicante, Spain",
-    "requestQuote": "Request a quote →",
     "copyright": "© {year} AFV Cocinas. All rights reserved.",
     "links": {
       "home": "Home",
       "kitchens": "Kitchens",
       "gallery": "Gallery",
-      "about": "About me",
-      "contact": "Contact"
+      "about": "About me"
     },
     "legal": {
       "notice": "Legal notice",
@@ -63,14 +55,6 @@
       "assembly": {
         "title": "Kitchen Installation",
         "description": "Professional installation with millimetre precision. From material delivery to the final adjustment, we guarantee a flawless fit."
-      },
-      "design": {
-        "title": "Full Design",
-        "description": "We create the space you have in mind. Personalised advice on layout, materials, finishes and appliances for your ideal kitchen."
-      },
-      "sales": {
-        "title": "Direct Sales",
-        "description": "Direct access to the best brands in the industry. Top-quality furniture, worktops and appliances at the best price, with no middlemen."
       }
     },
     "parallax": {

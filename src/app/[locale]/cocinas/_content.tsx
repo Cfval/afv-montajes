@@ -3,13 +3,10 @@
 import Image from 'next/image'
 import editorialImg from '../../../../public/images/cocinas/detalle-editorial.jpg'
 import { useTranslations } from 'next-intl'
-import { Link } from '@/lib/navigation'
 import { motion } from 'framer-motion'
 import cocinasHero from '../../../../public/images/hero/cocinas-hero.jpg'
 import { kitchens } from '@/data/kitchens'
-import { testimonials } from '@/data/testimonials'
 import KitchenGrid from '@/components/cocinas/KitchenGrid'
-import Testimonials from '@/components/cocinas/Testimonials'
 import BeforeAfter from '@/components/shared/BeforeAfter'
 
 const valueIcons = [
@@ -213,34 +210,6 @@ export default function CocinasContent() {
             </h2>
           </div>
           <KitchenGrid kitchens={kitchens} />
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-24" style={{ backgroundColor: '#1A1A17', borderTop: '0.5px solid rgba(201,169,110,0.08)' }}>
-        <div className="mx-auto px-8" style={{ maxWidth: '1280px' }}>
-          <div className="mb-12">
-            <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '4px', textTransform: 'uppercase', color: '#C9A96E', marginBottom: '16px' }}>
-              {t('testimonials.tag')}
-            </p>
-            <h2 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 'clamp(26px, 3vw, 38px)', color: '#F2F0E8', lineHeight: 1.2 }}>
-              {t('testimonials.heading')}
-            </h2>
-          </div>
-          <Testimonials testimonials={testimonials} />
-        </div>
-      </section>
-
-      {/* CTA bottom */}
-      <section className="py-20 text-center" style={{ backgroundColor: '#0E0E0C', borderTop: '0.5px solid rgba(201,169,110,0.08)' }}>
-        <div className="mx-auto px-8" style={{ maxWidth: '600px' }}>
-          <h2 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 'clamp(22px, 2.8vw, 34px)', color: '#F2F0E8', lineHeight: 1.25, marginBottom: '16px' }}>
-            {t('bottomCta.heading')}
-          </h2>
-          <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 300, fontSize: '15px', color: '#9C9A8E', lineHeight: 1.7, marginBottom: '28px' }}>
-            {t('bottomCta.description')}
-          </p>
-          <Link href="/contacto" className="btn-outline">{t('bottomCta.button')}</Link>
         </div>
       </section>
     </>

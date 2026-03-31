@@ -12,7 +12,6 @@ export default function Footer() {
     { href: '/cocinas' as const, label: t('links.kitchens') },
     { href: '/galeria' as const, label: t('links.gallery') },
     { href: '/sobre-mi' as const, label: t('links.about') },
-    { href: '/contacto' as const, label: t('links.contact') },
   ]
 
   const legalLinks = [
@@ -151,22 +150,6 @@ export default function Footer() {
             >
               info@afvcocinas.es
             </a>
-            <Link
-              href="/presupuesto"
-              className="mt-2 inline-flex items-center gap-2 text-sm transition-colors duration-300"
-              style={{
-                color: '#C9A96E',
-                fontFamily: 'var(--font-sans)',
-                fontWeight: 500,
-                fontSize: '11px',
-                textTransform: 'uppercase',
-                letterSpacing: '2px',
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = '#E2CFA0')}
-              onMouseLeave={(e) => (e.currentTarget.style.color = '#C9A96E')}
-            >
-              {t('requestQuote')}
-            </Link>
           </div>
         </div>
 

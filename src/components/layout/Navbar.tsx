@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useTranslations, useLocale } from 'next-intl'
 import { Link, usePathname } from '@/lib/navigation'
@@ -9,6 +9,11 @@ import Logo from '@/components/layout/Logo'
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
   const t = useTranslations('navbar')
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
   const locale = useLocale()
   const pathname = usePathname()
 

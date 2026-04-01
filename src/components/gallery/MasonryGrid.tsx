@@ -59,9 +59,9 @@ export default function MasonryGrid({ images }: { images: GalleryImage[] }) {
               {/* Hover overlay */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-250 flex items-center justify-center"
-                style={{ backgroundColor: 'rgba(255,255,255,0.35)' }}
+                style={{ backgroundColor: 'rgba(0,0,0,0.25)' }}
               >
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E87B35" strokeWidth="1.8">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="1.8">
                   <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
                 </svg>
               </div>

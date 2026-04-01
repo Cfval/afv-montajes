@@ -96,14 +96,6 @@ export default function CocinasContent() {
       {/* Transformaciones */}
       <section className="py-20" style={{ backgroundColor: '#F5F5F3' }}>
         <div className="mx-auto px-6" style={{ maxWidth: '1180px' }}>
-          <div className="mb-8 text-center">
-            <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '3px', textTransform: 'uppercase', color: '#E87B35', marginBottom: '8px' }}>
-              {t('beforeAfter.tag')}
-            </p>
-            <h2 style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: 'clamp(22px, 3vw, 32px)', color: '#1A1A1A', lineHeight: 1.15 }}>
-              {t('beforeAfter.heading')}
-            </h2>
-          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <BeforeAfter
               before={{ src: '/images/slider/antes2.jpeg', alt: 'Cocina antes de la reforma' }}

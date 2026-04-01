@@ -11,80 +11,33 @@ export default function KitchenCard({ kitchen }: { kitchen: Kitchen }) {
   const ts = useTranslations('cocinas.styleLabels')
 
   return (
-    <Link
-      href={`/trabajos/${kitchen.slug}`}
-      className="relative block overflow-hidden group"
-      style={{ aspectRatio: '4/3', display: 'block' }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
-      {/* Image */}
-      <div className="absolute inset-0">
-        <Image
-          src={kitchen.images[0]}
-          alt={kitchen.name}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          style={{
-            objectFit: 'cover',
-            transform: hovered ? 'scale(1.04)' : 'scale(1)',
-            transition: 'transform 0.7s ease',
-          }}
-        />
-      </div>
-
-      {/* Overlay gradient */}
+    <Link href={`/trabajos/${kitchen.slug}`} className="block" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
       <div
-        className="absolute inset-0"
+        className="bg-white overflow-hidden transition-all duration-250"
         style={{
-          background:
-            'linear-gradient(to top, rgba(14,14,12,0.9) 0%, rgba(14,14,12,0.2) 50%, transparent 100%)',
-        }}
-      />
-
-      {/* Content */}
-      <div className="absolute bottom-0 left-0 right-0 p-5">
-        <span
-          style={{
-            display: 'inline-block',
-            fontFamily: 'var(--font-sans)',
-            fontWeight: 500,
-            fontSize: '10px',
-            letterSpacing: '3px',
-            textTransform: 'uppercase',
-            color: '#C9A96E',
-            border: '0.5px solid rgba(201,169,110,0.4)',
-            padding: '4px 10px',
-            marginBottom: '8px',
-          }}
-        >
-          {ts(kitchen.style)}
-        </span>
-        <p
-          style={{
-            fontFamily: 'var(--font-serif)',
-            fontWeight: 400,
-            fontSize: '18px',
-            color: '#F2F0E8',
-            lineHeight: 1.3,
-          }}
-        >
-          {kitchen.name}
-        </p>
-      </div>
-
-      {/* Arrow on hover */}
-      <div
-        className="absolute top-4 right-4 transition-all duration-300"
-        style={{
-          opacity: hovered ? 1 : 0,
-          transform: hovered ? 'translate(0,0)' : 'translate(-4px,4px)',
-          color: '#C9A96E',
+          boxShadow: hovered ? '0 4px 16px rgba(0,0,0,0.08)' : '0 1px 4px rgba(0,0,0,0.04)',
+          borderBottom: hovered ? '2px solid #E87B35' : '2px solid transparent',
+          transform: hovered ? 'translateY(-4px)' : 'none',
         }}
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M7 17L17 7M17 7H7M17 7v10" />
-        </svg>
+        <div style={{ position: 'relative', width: '100%', minHeight: 200, overflow: 'hidden' }}>
+          <Image
+            src={kitchen.images[0]}
+            alt={kitchen.name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: 'cover', transition: 'transform 0.6s ease', transform: hovered ? 'scale(1.03)' : 'scale(1)' }}
+          />
+        </div>
+
+        <div className="p-4">
+          <span style={{ display: 'inline-block', fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', textTransform: 'uppercase', letterSpacing: '1px', color: '#E87B35', marginBottom: 8 }}>
+            {ts(kitchen.style)}
+          </span>
+          <p style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: '16px', color: '#1A1A1A', lineHeight: 1.25, marginTop: 4 }}>
+            {kitchen.name}
+          </p>
+        </div>
       </div>
     </Link>
   )

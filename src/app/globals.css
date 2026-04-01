@@ -2,20 +2,17 @@
 
 @theme {
   /* Fondos */
-  --color-bg-dark: #0E0E0C;
-  --color-bg-card: #1A1A17;
-  --color-bg-surface: #222220;
-  --color-bg-subtle: #2A2A27;
+  --color-bg: #FFFFFF;
+  --color-bg-surface: #F5F5F3;
+  --color-border: #E5E5E3;
 
-  /* Dorados */
-  --color-gold: #C9A96E;
-  --color-gold-light: #E2CFA0;
-  --color-gold-dim: #8B7444;
+  /* Acento */
+  --color-accent: #E87B35;
+  --color-accent-dark: #D06A28;
 
   /* Textos */
-  --color-text-primary: #F2F0E8;
-  --color-text-secondary: #9C9A8E;
-  --color-text-muted: #6B6A60;
+  --color-text: #1A1A1A;
+  --color-text-secondary: #666666;
 
   /* Estados */
   --color-success: #5DCAA5;
@@ -23,8 +20,10 @@
   --color-warning: #EF9F27;
 
   /* Tipografías */
-  --font-serif: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-heading: var(--font-syne), "Syne", sans-serif;
   --font-sans: var(--font-outfit), "Outfit", sans-serif;
+  /* Alias temporal para no romper páginas que aún usan font-serif */
+  --font-serif: var(--font-heading);
 
   /* Espaciado */
   --spacing-section: 96px;
@@ -35,22 +34,14 @@
   --container-wide: 1440px;
 }
 
-/* CSS custom properties para uso en CSS puro (fuera de Tailwind) */
-:root {
-  --gold-glow: rgba(201, 169, 110, 0.15);
-  --border-gold-subtle: rgba(201, 169, 110, 0.08);
-  --border-gold-light: rgba(201, 169, 110, 0.1);
-  --border-gold-medium: rgba(201, 169, 110, 0.25);
-}
-
 /* Base */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #0E0E0C;
-  color: #F2F0E8;
+  background-color: #FFFFFF;
+  color: #1A1A1A;
   font-family: var(--font-sans);
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -59,97 +50,106 @@ body {
 
 /* Tipografía base para títulos */
 h1, h2, h3, h4 {
-  font-family: var(--font-serif);
-  font-weight: 400;
-  color: #F2F0E8;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: #1A1A1A;
 }
 
-/* Botones reutilizables (usables en server components sin event handlers) */
+/* Botones reutilizables */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background-color: #0E0E0C;
-  color: #0E0E0C;
-  border: 1px solid #C9A96E;
+  background-color: #E87B35;
+  color: #FFFFFF;
+  border: none;
   padding: 14px 32px;
   font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+  font-size: 14px;
   text-decoration: none;
-  transition: color 0.4s ease-out;
+  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: #C9A96E;
-  clip-path: circle(150% at 50% 50%);
-  transition: clip-path 0.4s ease-out;
-  z-index: -1;
-}
-
 .btn-primary:hover {
-  color: #C9A96E;
-}
-
-.btn-primary:hover::before {
-  clip-path: circle(0% at 50% 50%);
+  background-color: #D06A28;
 }
 
 .btn-outline {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background-color: transparent;
-  color: #C9A96E;
+  background-color: #1A1A1A;
+  color: #E87B35;
   padding: 14px 32px;
   font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+  font-size: 14px;
   text-decoration: none;
-  transition: all 0.3s ease;
   cursor: pointer;
-  border: 1px solid #C9A96E;
+  border: 1px solid #1A1A1A;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.35s ease;
+}
+
+.btn-outline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #E87B35;
+  z-index: -1;
+  transition: width 0.35s ease;
 }
 
 .btn-outline:hover {
-  background-color: #C9A96E;
-  color: #0E0E0C;
+  color: #FFFFFF;
+}
+
+.btn-outline:hover::before {
+  width: 100%;
+}
+
+
+/* Logo group — scale down on mobile */
+.logo-group {
+  transform-origin: left center;
+}
+
+@media (max-width: 640px) {
+  .logo-group {
+    transform: scale(0.7);
+  }
 }
 
 /* ── Form elements ─────────────────────────────────────────── */
 
 .form-input {
   width: 100%;
-  background-color: #1A1A17;
-  border: 0.5px solid rgba(201, 169, 110, 0.2);
-  color: #F2F0E8;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E3;
+  color: #1A1A1A;
   padding: 14px 16px;
   font-family: var(--font-sans);
   font-weight: 300;
   font-size: 15px;
   outline: none;
-  transition: border-color 0.25s ease;
+  transition: border-color 0.2s ease;
   appearance: none;
   -webkit-appearance: none;
 }
 
 .form-input:focus {
-  border-color: rgba(201, 169, 110, 0.6);
+  border-color: #E87B35;
 }
 
 .form-input::placeholder {
-  color: #6B6A60;
+  color: #999999;
 }
 
 .form-input-error {
@@ -160,10 +160,8 @@ h1, h2, h3, h4 {
   display: block;
   font-family: var(--font-sans);
   font-weight: 500;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #9C9A8E;
+  font-size: 13px;
+  color: #666666;
   margin-bottom: 8px;
 }
 
@@ -176,7 +174,7 @@ h1, h2, h3, h4 {
 
 /* Select arrow */
 select.form-input {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236B6A60' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
   padding-right: 40px;

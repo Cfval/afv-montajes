@@ -1,18 +1,24 @@
 import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
+import { redirect } from 'next/navigation'
 import LegalLayout from '@/components/legal/LegalLayout'
 
 type Props = { params: Promise<{ locale: string }> }
 
 export const metadata: Metadata = {
   title: 'Política de Cookies',
-  description: 'Política de cookies de AFV Cocinas. Qué cookies utilizamos y cómo gestionarlas.',
+  description: 'Política de cookies de AFV Cocinas. Información sobre el uso de cookies en nuestro sitio web.',
   robots: { index: false },
 }
 
 export default async function PoliticaCookiesPage({ params }: Props) {
   const { locale } = await params
   setRequestLocale(locale)
+
+  // Redirect EN to ES since legal content is only in Spanish
+  if (locale === 'en') {
+    redirect('/es/politica-cookies')
+  }
   return (
     <LegalLayout title="Política de Cookies" subtitle="Última actualización: marzo 2026">
       <LegalSection title="1. ¿Qué son las cookies?">

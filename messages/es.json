@@ -2,7 +2,7 @@
   "metadata": {
     "siteName": "AFV Cocinas",
     "siteTitle": "AFV Cocinas — Montaje y Diseño de Cocinas en Alicante",
-    "siteDescription": "Especialistas en montaje, diseño y reforma de cocinas en la provincia de Alicante. Más de 15 años de experiencia. Presupuesto sin compromiso.",
+    "siteDescription": "Especialistas en montaje, diseño y reforma de cocinas en la provincia de Alicante. Más de 7 años de experiencia. Presupuesto sin compromiso.",
     "ogLocale": "es_ES",
     "ogImageAlt": "AFV Cocinas — Montaje y Diseño de Cocinas en Alicante"
   },
@@ -20,9 +20,8 @@
     "copyright": "© {year} AFV Cocinas. Todos los derechos reservados.",
     "links": {
       "home": "Inicio",
-      "kitchens": "Cocinas",
-      "gallery": "Galería",
-      "about": "Sobre mí"
+      "kitchens": "Trabajos",
+      "gallery": "Galería"
     },
     "legal": {
       "notice": "Aviso legal",
@@ -38,137 +37,46 @@
   "home": {
     "meta": {
       "title": "Montaje y Diseño de Cocinas en Alicante",
-      "description": "Especialistas en montaje, reforma y diseño de cocinas en Alicante. Más de 15 años de experiencia y 500 proyectos realizados. Presupuesto sin compromiso.",
+      "description": "Especialistas en montaje, reforma y diseño de cocinas en Alicante. Más de 7 años de experiencia y 300 proyectos realizados. Presupuesto sin compromiso.",
       "ogTitle": "AFV Cocinas — Montaje y Diseño de Cocinas en Alicante",
-      "ogDescription": "Especialistas en montaje, reforma y diseño de cocinas en Alicante. Más de 15 años de experiencia."
+      "ogDescription": "Especialistas en montaje, reforma y diseño de cocinas en Alicante. Más de 7 años de experiencia."
     },
     "hero": {
-      "tag": "Montaje · Diseño · Reforma",
-      "headline": "Tu cocina",
-      "headlineEm": "a medida",
-      "description": "Diseñamos y montamos cocinas en la provincia de Alicante. Calidad, precisión y atención al detalle en cada proyecto.",
-      "cta": "Pide presupuesto →"
+      "name": "Alberto Francés",
+      "role": "Montador de cocinas",
+      "location": "Alicante",
+      "stamp": "montaje · cocinas · alicante"
     },
-    "services": {
-      "tag": "Servicios",
-      "heading": "Lo que hacemos",
-      "assembly": {
-        "title": "Montaje de Cocinas",
-        "description": "Instalación profesional con precisión milimétrica. Desde la recepción del material hasta el último ajuste, garantizamos un montaje impecable."
-      }
+    "about": {
+      "number": "7+",
+      "numberLabel": "años de experiencia",
+      "text": "Llevo más de [[highlight]] montando cocinas por toda la provincia de Alicante. Trabajo con distribuidores y directamente con particulares. Si tienes un proyecto, hablamos.",
+      "highlight": "7 años",
+      "statYears": "años",
+      "statKitchens": "cocinas",
+      "statLocation": "Provincia de Alicante"
     },
-    "parallax": {
-      "phrase1": "Cada detalle importa",
-      "phrase2": "Calidad que se ve y se siente"
-    },
-    "featuredWork": {
-      "tag": "Portfolio",
-      "heading": "Trabajos recientes",
-      "viewAll": "Ver todos los trabajos →"
-    },
-    "stats": {
-      "yearsLabel": "Años de experiencia",
-      "kitchensLabel": "Cocinas montadas",
-      "satisfactionLabel": "Clientes satisfechos",
-      "areaLabel": "Provincia de trabajo"
-    },
-    "brands": {
-      "tag": "Marcas colaboradoras"
-    },
-    "cta": {
-      "tag": "Empezamos",
-      "heading": "Tu cocina perfecta",
-      "headingEm": "te espera",
-      "description": "Cuéntanos tu proyecto y te ofrecemos un presupuesto personalizado, sin compromiso. Respondemos en menos de 48 horas.",
-      "button": "Solicitar presupuesto →"
+    "contact": {
+      "heading": "Contacto",
+      "emailLabel": "Email",
+      "phoneLabel": "Teléfono",
+      "whatsappCta": "Escríbeme por WhatsApp",
+      "description": "¿Tienes un proyecto? Cuéntame qué necesitas y te doy presupuesto sin compromiso."
     }
   },
-  "sobreMi": {
-    "meta": {
-      "title": "Quién Soy",
-      "description": "Más de 15 años montando y diseñando cocinas en la provincia de Alicante. Conoce al profesional detrás de AFV Cocinas.",
-      "ogTitle": "Quién Soy | AFV Cocinas",
-      "ogDescription": "Más de 15 años montando y diseñando cocinas en la provincia de Alicante. Conoce al profesional detrás de AFV Cocinas.",
-      "ogImageAlt": "AFV Cocinas — Sobre mí"
-    },
-    "hero": {
-      "tag": "Sobre mí",
-      "heading": "Quién soy"
-    },
-    "story": {
-      "tag": "Mi historia",
-      "heading": "Más de 15 años transformando cocinas en Alicante",
-      "p1": "Me llamo Alberto y llevo más de 15 años dedicándome al montaje y diseño de cocinas en la provincia de Alicante. Lo que comenzó como un oficio aprendido junto a mi padre se ha convertido en mi pasión y mi forma de vida.",
-      "p2": "A lo largo de estos años he montado más de 500 cocinas, desde reformas íntimas en pisos pequeños hasta grandes instalaciones en viviendas de lujo. Cada proyecto es único, y me comprometo a tratarlo como si fuera mi propia casa.",
-      "p3": "Trabajo directamente con las mejores marcas del mercado, lo que me permite ofrecer materiales de primera calidad a precios competitivos. Sin intermediarios, sin sorpresas."
-    },
-    "stats": {
-      "yearsLabel": "Años de experiencia",
-      "kitchensLabel": "Cocinas montadas",
-      "areaLabel": "Provincia de trabajo"
-    },
-    "values": {
-      "tag": "Mis valores",
-      "heading": "Por qué elegirme",
-      "quality": {
-        "title": "Calidad",
-        "description": "Utilizamos materiales de primera calidad y técnicas de montaje precisas para garantizar un resultado duradero y sin defectos."
-      },
-      "punctuality": {
-        "title": "Puntualidad",
-        "description": "Respetamos los plazos acordados. Sabemos que una reforma en el hogar genera inconvenientes, y nos comprometemos a minimizarlos."
-      },
-      "trust": {
-        "title": "Confianza",
-        "description": "Más de 15 años de trayectoria avalan nuestro trabajo. Trabajamos con transparencia total: sin sorpresas en el presupuesto final."
-      },
-      "detail": {
-        "title": "Atención al detalle",
-        "description": "Cada milímetro cuenta. Desde la nivelación perfecta hasta el acabado de los zócalos, cuidamos cada elemento del montaje."
-      }
-    },
-    "process": {
-      "tag": "Cómo trabajamos",
-      "heading": "El proceso de trabajo",
-      "contact": {
-        "title": "Contacto",
-        "description": "Nos cuentas tu proyecto y tomamos nota de tus necesidades."
-      },
-      "measure": {
-        "title": "Medición",
-        "description": "Visitamos el espacio y tomamos medidas exactas para el presupuesto."
-      },
-      "quote": {
-        "title": "Presupuesto",
-        "description": "Recibe un presupuesto detallado sin sorpresas ni costes ocultos."
-      },
-      "install": {
-        "title": "Montaje",
-        "description": "Ejecutamos el montaje con precisión en el plazo acordado."
-      },
-      "delivery": {
-        "title": "Entrega",
-        "description": "Revisión final contigo y entrega de tu cocina perfecta."
-      }
-    },
-    "cta": {
-      "heading": "¿Hablamos sobre tu cocina?",
-      "description": "Cuéntame tu proyecto y te daré mi opinión profesional sin compromiso. Estoy aquí para ayudarte.",
-      "button": "Solicitar presupuesto →"
-    }
-  },
+  
   "cocinas": {
     "meta": {
       "title": "Nuestras Cocinas — Portfolio",
-      "description": "Explora nuestro portfolio de cocinas montadas en Alicante: modernas, rústicas, minimalistas y con isla. Más de 500 proyectos realizados.",
+      "description": "Explora nuestro portfolio de cocinas montadas en Alicante: modernas, rústicas, minimalistas y con isla. Más de 300 proyectos realizados.",
       "ogTitle": "Nuestras Cocinas — Portfolio | AFV Cocinas",
       "ogDescription": "Explora nuestro portfolio de cocinas montadas en Alicante: modernas, rústicas, minimalistas y con isla.",
       "ogImageAlt": "AFV Cocinas — Portfolio de cocinas"
     },
     "hero": {
       "tag": "Portfolio",
-      "heading": "Nuestras Cocinas",
-      "description": "Cada cocina es un proyecto único. Explora nuestro portfolio y encuentra inspiración para la tuya."
+      "heading": "Cocinas montadas con precisión",
+      "description": "Montajes hechos a medida, con cuidado y oficio. Cada remate limpio y cada ajuste pensado para durar."
     },
     "whyUs": {
       "tag": "Por qué elegirnos",
@@ -192,13 +100,15 @@
     },
     "approach": {
       "tag": "Nuestro enfoque",
-      "heading": "Personalizamos hasta el último detalle",
-      "body": "Cada cocina que montamos nace de una conversación. Entendemos tu espacio, tu estilo de vida y tu visión antes de proponer ninguna solución. El resultado es siempre un espacio único, pensado para ti.",
+      "heading": "Cuidado hasta el último detalle",
+      "body": "Trabajo limpio, sin prisas: medimos, ajustamos y rematamos. Montajes sólidos, soluciones sencillas y acabados pulcros que se mantienen con el uso diario.",
       "galleryButton": "Ver galería →"
     },
     "beforeAfter": {
       "tag": "Transformaciones",
-      "heading": "El cambio habla por sí solo"
+      "heading": "El cambio habla por sí solo",
+      "before": "ANTES",
+      "after": "DESPUÉS"
     },
     "portfolio": {
       "tag": "Trabajos realizados",
@@ -242,210 +152,30 @@
       "relatedHeading": "Proyectos similares"
     }
   },
-  "galeria": {
+  "gallery": {
     "meta": {
       "title": "Galería de Cocinas",
-      "description": "Galería de cocinas montadas por AFV Cocinas en la provincia de Alicante. Más de 500 proyectos realizados.",
+      "description": "Galería de cocinas instaladas por AFV Cocinas en la provincia de Alicante. Más de 300 proyectos realizados.",
       "ogTitle": "Galería de Cocinas | AFV Cocinas",
-      "ogDescription": "Galería de cocinas montadas por AFV Cocinas en la provincia de Alicante. Más de 500 proyectos realizados.",
+      "ogDescription": "Galería de cocinas instaladas por AFV Cocinas en la provincia de Alicante. Más de 300 proyectos realizados.",
       "ogImageAlt": "AFV Cocinas — Galería"
+    },
+    "viewMoreButton": "Ver más trabajos →",
+    "portfolioLink": "Ver todos los proyectos"
+  },
+  "galeria": {
+    "meta": {
+      "title": "Galería",
+      "description": "Una selección de montajes recientes: fotos reales de trabajos hechos con cuidado y oficio.",
+      "ogTitle": "Galería | AFV Cocinas",
+      "ogDescription": "Una selección de montajes recientes: fotos reales de trabajos hechos con cuidado y oficio.",
+      "ogImageAlt": "Galería"
     },
     "tag": "Trabajos realizados",
     "heading": "Galería",
-    "description": "Una selección de nuestros proyectos más recientes en la provincia de Alicante."
+    "description": "Fotos reales de montajes y transformaciones, tomadas en obra y tras el remate final."
   },
-  "presupuesto": {
-    "meta": {
-      "title": "Solicitar Presupuesto",
-      "description": "Solicita un presupuesto personalizado para tu cocina en Alicante. Sin compromiso. Respondemos en menos de 48 horas.",
-      "ogTitle": "Solicitar Presupuesto | AFV Cocinas",
-      "ogDescription": "Solicita un presupuesto personalizado para tu cocina en Alicante. Sin compromiso. Respondemos en menos de 48 horas.",
-      "ogImageAlt": "AFV Cocinas — Solicitar Presupuesto"
-    },
-    "tag": "Presupuesto",
-    "heading": "Solicita tu presupuesto",
-    "description": "Cuéntanos tu proyecto y te enviamos un presupuesto detallado y personalizado.",
-    "trustNoCommitment": "Sin compromiso",
-    "trust48h": "Respuesta en 48h",
-    "trustFree": "Presupuesto gratuito",
-    "calculatorTag": "Calculadora orientativa",
-    "calculatorHeading": "¿Cuánto puede costar tu cocina?",
-    "calculatorDescription": "Responde 4 preguntas rápidas y obtén una estimación orientativa al instante."
-  },
-  "contacto": {
-    "meta": {
-      "title": "Contacto",
-      "description": "Contacta con AFV Cocinas para tu proyecto de montaje o reforma de cocina en la provincia de Alicante. Teléfono, email y formulario.",
-      "ogTitle": "Contacto | AFV Cocinas",
-      "ogDescription": "Contacta con AFV Cocinas para tu proyecto de montaje o reforma de cocina en la provincia de Alicante.",
-      "ogImageAlt": "AFV Cocinas — Contacto"
-    },
-    "tag": "Contacto",
-    "heading": "Hablemos de tu cocina",
-    "infoTag": "Información de contacto",
-    "phoneLabel": "Teléfono",
-    "emailLabel": "Email",
-    "scheduleLabel": "Horario",
-    "scheduleValue": "Lun–Vie 8:00–19:00 · Sáb 9:00–14:00",
-    "areaLabel": "Zona de trabajo",
-    "areaValue": "Provincia de Alicante",
-    "whatsappCta": "Escribir por WhatsApp",
-    "whatsappMessage": "Hola%2C%20quisiera%20información%20sobre%20vuestros%20servicios.",
-    "formHeading": "Envíanos un mensaje",
-    "mapPlaceholder": "Mapa de ubicación — Provincia de Alicante",
-    "mapNote": "Google Maps se integrará aquí"
-  },
-  "blog": {
-    "meta": {
-      "title": "Blog — Consejos y Tendencias",
-      "description": "Consejos, tendencias y guías sobre diseño y reforma de cocinas en Alicante. El blog de AFV Cocinas.",
-      "ogTitle": "Blog — Consejos y Tendencias | AFV Cocinas",
-      "ogDescription": "Consejos, tendencias y guías sobre diseño y reforma de cocinas en Alicante.",
-      "ogImageAlt": "AFV Cocinas — Blog"
-    },
-    "tag": "Blog",
-    "heading": "Consejos y tendencias",
-    "description": "Guías prácticas, inspiración y novedades sobre el mundo de las cocinas de la mano de AFV Cocinas.",
-    "noPosts": "No hay artículos publicados todavía.",
-    "readArticle": "Leer artículo →",
-    "backToBlog": "← Volver al blog",
-    "backToBlogShort": "← Blog"
-  },
-  "forms": {
-    "contact": {
-      "nameLabel": "Nombre *",
-      "namePlaceholder": "Tu nombre",
-      "emailLabel": "Email *",
-      "emailPlaceholder": "tu@email.com",
-      "messageLabel": "Mensaje *",
-      "messagePlaceholder": "¿En qué podemos ayudarte?",
-      "submitButton": "Enviar mensaje →",
-      "sending": "Enviando...",
-      "successTitle": "Mensaje enviado",
-      "successBody": "Te responderemos lo antes posible.",
-      "sendAnother": "Enviar otro mensaje",
-      "errorBanner": "Error al enviar. Por favor, inténtalo de nuevo.",
-      "validation": {
-        "nameRequired": "Nombre requerido",
-        "emailInvalid": "Email inválido",
-        "messageTooShort": "El mensaje debe tener al menos 10 caracteres"
-      }
-    },
-    "budget": {
-      "sectionPersonal": "Datos personales",
-      "sectionKitchen": "Sobre tu cocina",
-      "sectionFiles": "Adjuntos (opcional)",
-      "nameLabel": "Nombre completo *",
-      "namePlaceholder": "Antonio García",
-      "emailLabel": "Email *",
-      "emailPlaceholder": "antonio@email.com",
-      "phoneLabel": "Teléfono *",
-      "phonePlaceholder": "+34 600 000 000",
-      "cityLabel": "Población *",
-      "cityPlaceholder": "Alicante, Elche, Torrevieja...",
-      "serviceTypeLabel": "Tipo de servicio *",
-      "serviceTypeDefault": "Selecciona una opción",
-      "serviceMontaje": "Solo montaje",
-      "serviceReforma": "Reforma integral",
-      "serviceDisenoMontaje": "Diseño + montaje",
-      "serviceDiseno": "Solo diseño",
-      "serviceOtro": "Otro",
-      "metersLabel": "Metros aproximados",
-      "metersPlaceholder": "Ej: 4.5",
-      "appliancesLabel": "¿Tienes electrodomésticos? *",
-      "appliancesYes": "Sí, los tengo",
-      "appliancesNo": "No, los necesito",
-      "appliancesSome": "Algunos",
-      "descriptionLabel": "Descripción del proyecto",
-      "descriptionPlaceholder": "Cuéntanos qué tienes en mente: estilo, distribución, materiales...",
-      "budgetRangeLabel": "Presupuesto orientativo *",
-      "budgetRangeDefault": "Selecciona un rango",
-      "budgetMenos3000": "Menos de 3.000€",
-      "budget3000a6000": "3.000€ – 6.000€",
-      "budget6000a10000": "6.000€ – 10.000€",
-      "budgetMas10000": "Más de 10.000€",
-      "budgetNoSe": "No lo sé todavía",
-      "filesLabel": "Fotos o planos",
-      "filesDragText": "Arrastra archivos aquí o",
-      "filesClickText": "haz clic para seleccionar",
-      "filesHint": "JPG, PNG, PDF · Max 5 archivos · Max 5MB cada uno",
-      "filesRemoveAll": "Quitar todos",
-      "submitButton": "Enviar solicitud de presupuesto →",
-      "sending": "Enviando...",
-      "successTitle": "¡Solicitud enviada!",
-      "successBody": "Te contactamos en menos de 48 horas. Revisa tu bandeja de entrada.",
-      "sendAnother": "Enviar otra solicitud",
-      "errorBanner": "Error al enviar. Inténtalo de nuevo o llámanos directamente.",
-      "privacyText": "Al enviar este formulario aceptas nuestra",
-      "privacyLink": "política de privacidad",
-      "validation": {
-        "nameRequired": "Nombre requerido",
-        "emailInvalid": "Email inválido",
-        "phoneRequired": "Teléfono requerido",
-        "cityRequired": "Población requerida",
-        "serviceTypeRequired": "Selecciona un tipo de servicio",
-        "appliancesRequired": "Selecciona una opción",
-        "budgetRequired": "Selecciona un rango orientativo",
-        "filesTooMany": "Máximo {max} archivos",
-        "fileTypeInvalid": "Solo se permiten imágenes JPG, PNG y PDF",
-        "fileTooLarge": "Cada archivo debe pesar menos de {max}MB"
-      }
-    }
-  },
-  "calculator": {
-    "stepOf": "Paso {step} de {total}",
-    "step1": {
-      "question": "¿Cuántos metros lineales tiene tu cocina?",
-      "hint": "Suma todos los frentes: la pared principal, laterales e isla si la hay.",
-      "unit": "metros",
-      "minLabel": "2m",
-      "maxLabel": "10m+"
-    },
-    "step2": {
-      "question": "¿Qué tipo de encimera prefieres?",
-      "hint": "El material de la encimera tiene un gran impacto en el precio final.",
-      "laminadoLabel": "Laminado",
-      "laminadoRange": "150 – 250 €/m",
-      "silestoneLabel": "Silestone",
-      "silestoneRange": "400 – 600 €/m",
-      "granitoLabel": "Granito",
-      "granitoRange": "350 – 500 €/m",
-      "dektonLabel": "Dekton",
-      "dektonRange": "500 – 700 €/m"
-    },
-    "step3": {
-      "question": "¿Incluimos electrodomésticos?",
-      "hint": "Horno, vitrocerámica, campana extractora y frigorífico encastrado.",
-      "mediaLabel": "Sí, gama media",
-      "mediaSublabel": "Horno, vitro, campana, frigorífico",
-      "altaLabel": "Sí, gama alta",
-      "altaSublabel": "Marcas premium integradas",
-      "noLabel": "No incluir",
-      "noSublabel": "Tengo o compro por separado"
-    },
-    "step4": {
-      "question": "¿Qué tipo de trabajo necesitas?",
-      "hint": "El alcance del trabajo es el factor que más influye en el precio total.",
-      "montajeLabel": "Solo montaje",
-      "montajeSublabel": "Montas los muebles que ya tienes",
-      "montajeMueblesLabel": "Montaje + muebles",
-      "montajeMueblesSublabel": "Muebles nuevos + montaje incluido",
-      "reformaLabel": "Reforma integral",
-      "reformaSublabel": "Demolición, obra, muebles y montaje"
-    },
-    "result": {
-      "tag": "Estimación orientativa",
-      "intro": "Tu cocina podría costar entre",
-      "disclaimer": "Precio orientativo. El presupuesto definitivo depende de muchos factores: estado de la instalación existente, accesos, materiales concretos y otros detalles específicos de tu vivienda.",
-      "exactCta": "Pide un presupuesto exacto →",
-      "recalculate": "Volver a calcular"
-    },
-    "nav": {
-      "prev": "← Anterior",
-      "next": "Siguiente →",
-      "viewResult": "Ver resultado"
-    }
-  },
+  
   "cookies": {
     "ariaLabel": "Aviso de cookies",
     "text": "Usamos cookies propias para mejorar tu experiencia de navegación.",

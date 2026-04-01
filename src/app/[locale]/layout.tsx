@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Cormorant_Garamond, Outfit, Sora } from 'next/font/google'
+import { Syne, Outfit } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server'
@@ -10,10 +10,10 @@ import WhatsAppButton from '@/components/layout/WhatsAppButton'
 import CookieBanner from '@/components/layout/CookieBanner'
 import '@/app/globals.css'
 
-const cormorant = Cormorant_Garamond({
-  variable: '--font-cormorant',
+const syne = Syne({
+  variable: '--font-syne',
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['600', '700', '800'],
   display: 'swap',
 })
 
@@ -24,13 +24,6 @@ const outfit = Outfit({
   display: 'swap',
 })
 
-const sora = Sora({
-  variable: '--font-sora',
-  subsets: ['latin'],
-  weight: ['300', '600'],
-  display: 'swap',
-})
-
 type Props = {
   children: React.ReactNode
   params: Promise<{ locale: string }>
@@ -38,6 +31,13 @@ type Props = {
 
 export async function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -73,8 +73,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
-  name: 'AFV Cocinas',
-  description: 'Especialistas en montaje, diseño y reforma de cocinas en la provincia de Alicante',
+  name: 'AFV Montajes',
+  description: 'Montador de cocinas en la provincia de Alicante',
   url: 'https://afvcocinas.es',
   telephone: '+34600000000',
   email: 'info@afvcocinas.es',
@@ -112,7 +112,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html
       lang={locale}
-      className={`${cormorant.variable} ${outfit.variable} ${sora.variable} h-full antialiased`}
+      className={`${syne.variable} ${outfit.variable} h-full antialiased`}
       data-scroll-behavior="smooth"
     >
       <head>
@@ -121,7 +121,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col" style={{ backgroundColor: '#0E0E0C' }}>
+      <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main className="flex-1 pt-16">{children}</main>

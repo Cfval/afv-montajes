@@ -46,22 +46,22 @@ export default async function GaleriaPage({ params }: Props) {
   return (
     <>
       {/* Header */}
-      <section className="py-20 text-center" style={{ backgroundColor: '#0E0E0C' }}>
-        <div className="mx-auto px-8" style={{ maxWidth: '1280px' }}>
-          <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '4px', textTransform: 'uppercase', color: '#C9A96E', marginBottom: '16px' }}>
+      <section className="py-16 text-center bg-white">
+        <div className="mx-auto px-6" style={{ maxWidth: '1180px' }}>
+          <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '2px', textTransform: 'uppercase', color: '#E87B35', marginBottom: '10px' }}>
             {t('tag')}
           </p>
-          <h1 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 'clamp(32px, 5vw, 58px)', color: '#F2F0E8', lineHeight: 1.1, marginBottom: '16px' }}>
+          <h1 style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: 'clamp(28px, 4.6vw, 44px)', color: '#1A1A1A', lineHeight: 1.05, marginBottom: '12px' }}>
             {t('heading')}
           </h1>
-          <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 300, fontSize: '16px', color: '#9C9A8E', lineHeight: 1.7, maxWidth: '480px', margin: '0 auto' }}>
+          <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 300, fontSize: '16px', color: '#666666', lineHeight: 1.6, maxWidth: '720px', margin: '0 auto' }}>
             {t('description')}
           </p>
         </div>
       </section>
 
       {/* Masonry grid */}
-      <section className="pb-24" style={{ backgroundColor: '#0E0E0C' }}>
+      <section className="pb-24 bg-white">
         <div className="mx-auto px-8" style={{ maxWidth: '1440px' }}>
           <CocinasLink />
           <MasonryGrid images={images} />

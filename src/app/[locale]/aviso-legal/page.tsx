@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { setRequestLocale } from 'next-intl/server'
+import { redirect } from 'next/navigation'
 import LegalLayout from '@/components/legal/LegalLayout'
 
 type Props = { params: Promise<{ locale: string }> }
@@ -13,6 +14,12 @@ export const metadata: Metadata = {
 export default async function AvisoLegalPage({ params }: Props) {
   const { locale } = await params
   setRequestLocale(locale)
+
+  // Redirect EN to ES since legal content is only in Spanish
+  if (locale === 'en') {
+    redirect('/es/aviso-legal')
+  }
+
   return (
     <LegalLayout title="Aviso Legal" subtitle="Última actualización: marzo 2026">
       <LegalSection title="1. Datos del titular">

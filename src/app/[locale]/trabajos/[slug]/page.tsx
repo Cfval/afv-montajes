@@ -51,17 +51,14 @@ export default async function KitchenPage({ params }: Props) {
 
   return (
     <>
-      {/* Gold accent top bar */}
-      <div style={{ height: '3px', background: 'linear-gradient(to right, transparent, #C9A96E 30%, #C9A96E 70%, transparent)' }} />
-
       {/* Breadcrumb */}
-      <div className="mx-auto px-8 pt-8" style={{ maxWidth: '1280px' }}>
-        <nav style={{ fontFamily: 'var(--font-sans)', fontSize: '12px', color: '#6B6A60', display: 'flex', gap: '8px', alignItems: 'center' }}>
-          <Link href="/" style={{ color: '#6B6A60', textDecoration: 'none' }}>{t('breadcrumbHome')}</Link>
-          <span>›</span>
-          <Link href="/trabajos" style={{ color: '#6B6A60', textDecoration: 'none' }}>{t('breadcrumbKitchens')}</Link>
-          <span>›</span>
-          <span style={{ color: '#9C9A8E' }}>{kitchen.name}</span>
+      <div className="mx-auto px-6 pt-8" style={{ maxWidth: '1180px' }}>
+        <nav style={{ fontFamily: 'var(--font-sans)', fontSize: '13px', color: '#666666', display: 'flex', gap: '8px', alignItems: 'center' }}>
+          <Link href="/" style={{ color: '#666666', textDecoration: 'none' }}>{t('breadcrumbHome')}</Link>
+          <span style={{ color: '#E5E5E3' }}>›</span>
+          <Link href="/trabajos" style={{ color: '#666666', textDecoration: 'none' }}>{t('breadcrumbKitchens')}</Link>
+          <span style={{ color: '#E5E5E3' }}>›</span>
+          <span style={{ color: '#1A1A1A', fontWeight: 500 }}>{kitchen.name}</span>
         </nav>
       </div>
 
@@ -70,15 +67,12 @@ export default async function KitchenPage({ params }: Props) {
 
       {/* Related kitchens */}
       {fallbackRelated.length > 0 && (
-        <section
-          className="py-20"
-          style={{ backgroundColor: '#1A1A17', borderTop: '0.5px solid rgba(201,169,110,0.08)' }}
-        >
-          <div className="mx-auto px-8" style={{ maxWidth: '1280px' }}>
-            <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '4px', textTransform: 'uppercase', color: '#C9A96E', marginBottom: '16px' }}>
+        <section className="py-16" style={{ backgroundColor: '#F5F5F3' }}>
+          <div className="mx-auto px-6" style={{ maxWidth: '1180px' }}>
+            <p style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '1px', textTransform: 'uppercase', color: '#E87B35', marginBottom: '8px' }}>
               {t('relatedTag')}
             </p>
-            <h2 style={{ fontFamily: 'var(--font-serif)', fontWeight: 400, fontSize: 'clamp(22px, 2.5vw, 32px)', color: '#F2F0E8', marginBottom: '32px' }}>
+            <h2 style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, fontSize: 'clamp(20px, 2.4vw, 28px)', color: '#1A1A1A', marginBottom: '20px' }}>
               {t('relatedHeading')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

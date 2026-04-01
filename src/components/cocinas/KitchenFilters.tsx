@@ -35,20 +35,22 @@ export default function KitchenFilters({ activeFilter, onFilterChange }: Kitchen
               textTransform: 'uppercase',
               padding: '8px 18px',
               border: '1px solid',
-              borderColor: isActive ? '#C9A96E' : 'rgba(201,169,110,0.3)',
-              backgroundColor: isActive ? '#C9A96E' : 'transparent',
-              color: isActive ? '#0E0E0C' : '#C9A96E',
+              borderColor: isActive ? '#E87B35' : '#D1D1CF',
+              backgroundColor: isActive ? '#E87B35' : '#F5F5F3',
+              color: isActive ? '#FFFFFF' : '#999999',
               cursor: 'pointer',
-              transition: 'all 0.25s ease',
+              transition: 'all 0.2s ease',
             }}
             onMouseEnter={(e) => {
               if (!isActive) {
-                e.currentTarget.style.backgroundColor = 'rgba(201,169,110,0.12)'
+                e.currentTarget.style.borderColor = '#E87B35'
+                e.currentTarget.style.color = '#E87B35'
               }
             }}
             onMouseLeave={(e) => {
               if (!isActive) {
-                e.currentTarget.style.backgroundColor = 'transparent'
+                e.currentTarget.style.borderColor = '#D1D1CF'
+                e.currentTarget.style.color = '#999999'
               }
             }}
           >

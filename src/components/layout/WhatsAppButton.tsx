@@ -39,8 +39,8 @@ export default function WhatsAppButton() {
                 transition={{ duration: 0.2 }}
                 className="mr-3"
                 style={{
-                  backgroundColor: '#C9A96E',
-                  color: '#0E0E0C',
+                  backgroundColor: '#E87B35',
+                  color: '#FFFFFF',
                   padding: '6px 12px',
                   fontFamily: 'var(--font-sans)',
                   fontWeight: 500,

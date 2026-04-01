@@ -14,7 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url('/', locale), lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 1 },
     { url: url('/cocinas', locale), lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: url('/galeria', locale), lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: url('/sobre-mi', locale), lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
   ])
 
   // Legal pages — Spanish only (content is always in Spanish)

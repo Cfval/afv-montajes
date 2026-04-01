@@ -64,7 +64,7 @@ export default function CtaSection() {
         </p>
 
         {/* CTA button */}
-        <Link href="/presupuesto" className="btn-primary">
+        <Link href="/trabajos" className="btn-primary">
           {t('button')}
         </Link>
       </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import {
   ReactCompareSlider,
 } from 'react-compare-slider'
@@ -17,10 +18,10 @@ function PlaceholderImage({ alt, tone }: { alt: string; tone: 'dark' | 'medium' 
       style={{
         width: '100%',
         height: '100%',
-        backgroundColor: tone === 'dark' ? '#141412' : '#2A2A27',
+        backgroundColor: tone === 'dark' ? '#F3F4F6' : '#E8EDEE',
         backgroundImage: tone === 'dark'
-          ? 'radial-gradient(ellipse at 40% 50%, rgba(139,116,68,0.08) 0%, transparent 60%)'
-          : 'radial-gradient(ellipse at 60% 50%, rgba(201,169,110,0.06) 0%, transparent 60%)',
+          ? 'radial-gradient(ellipse at 40% 50%, rgba(232,123,53,0.04) 0%, transparent 60%)'
+          : 'radial-gradient(ellipse at 60% 50%, rgba(232,123,53,0.03) 0%, transparent 60%)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -32,7 +33,7 @@ function PlaceholderImage({ alt, tone }: { alt: string; tone: 'dark' | 'medium' 
           fontFamily: 'var(--font-sans)',
           fontWeight: 300,
           fontSize: '11px',
-          color: '#6B6A60',
+          color: '#374151',
           textAlign: 'center',
           lineHeight: 1.5,
         }}
@@ -59,12 +60,12 @@ function SliderHandle() {
         style={{
           width: '1px',
           height: '100vh',
-          backgroundColor: '#C9A96E',
+          backgroundColor: '#1A1A1A',
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          opacity: 0.8,
+          opacity: 0.9,
         }}
       />
       {/* Circle */}
@@ -73,8 +74,8 @@ function SliderHandle() {
           width: '40px',
           height: '40px',
           borderRadius: '50%',
-          backgroundColor: '#0E0E0C',
-          border: '1.5px solid #C9A96E',
+          backgroundColor: '#FFFFFF',
+          border: '1.5px solid #1A1A1A',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -92,7 +93,7 @@ function SliderHandle() {
         >
           <path
             d="M5 7H1M1 7L3.5 4M1 7L3.5 10M13 7H17M17 7L14.5 4M17 7L14.5 10"
-            stroke="#C9A96E"
+            stroke="#1A1A1A"
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -105,12 +106,15 @@ function SliderHandle() {
 
 export default function BeforeAfter({ before, after, labels }: BeforeAfterProps) {
   const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setMounted(true))
+    return () => cancelAnimationFrame(id)
+  }, [])
 
   const beforeLabel = labels?.before ?? 'ANTES'
   const afterLabel = labels?.after ?? 'DESPUÉS'
 
-  if (!mounted) return <div style={{ aspectRatio: '16/9', backgroundColor: '#1A1A17' }} />
+  if (!mounted) return <div style={{ aspectRatio: '16/9', backgroundColor: '#F5F5F5' }} />
 
   return (
     <div style={{ position: 'relative', overflow: 'hidden' }}>
@@ -119,8 +123,11 @@ export default function BeforeAfter({ before, after, labels }: BeforeAfterProps)
         itemOne={
           <div style={{ position: 'relative', width: '100%', height: '100%' }}>
             {before.src
-              ? <img src={before.src} alt={before.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-              : <PlaceholderImage alt={before.alt} tone="dark" />
+              ? (
+                <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                  <Image src={before.src} alt={before.alt} fill sizes="(max-width: 560px) 100vw, 560px" style={{ objectFit: 'cover' }} />
+                </div>
+              ) : <PlaceholderImage alt={before.alt} tone="dark" />
             }
             {/* Before label */}
             <div
@@ -129,15 +136,15 @@ export default function BeforeAfter({ before, after, labels }: BeforeAfterProps)
                 top: '16px',
                 left: '16px',
                 fontFamily: 'var(--font-sans)',
-                fontWeight: 500,
-                fontSize: '10px',
-                letterSpacing: '3px',
+                fontWeight: 600,
+                fontSize: '11px',
+                letterSpacing: '1px',
                 textTransform: 'uppercase',
-                color: '#F2F0E8',
-                backgroundColor: 'rgba(14,14,12,0.75)',
-                padding: '5px 10px',
-                backdropFilter: 'blur(4px)',
-                border: '0.5px solid rgba(201,169,110,0.2)',
+                color: '#111827',
+                backgroundColor: 'rgba(255,255,255,0.9)',
+                padding: '6px 12px',
+                borderRadius: 6,
+                border: '1px solid rgba(26,26,26,0.15)',
               }}
             >
               {beforeLabel}
@@ -147,8 +154,11 @@ export default function BeforeAfter({ before, after, labels }: BeforeAfterProps)
         itemTwo={
           <div style={{ position: 'relative', width: '100%', height: '100%' }}>
             {after.src
-              ? <img src={after.src} alt={after.alt} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
-              : <PlaceholderImage alt={after.alt} tone="medium" />
+              ? (
+                <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                  <Image src={after.src} alt={after.alt} fill sizes="(max-width: 560px) 100vw, 560px" style={{ objectFit: 'cover' }} />
+                </div>
+              ) : <PlaceholderImage alt={after.alt} tone="medium" />
             }
             {/* After label */}
             <div
@@ -157,15 +167,15 @@ export default function BeforeAfter({ before, after, labels }: BeforeAfterProps)
                 top: '16px',
                 right: '16px',
                 fontFamily: 'var(--font-sans)',
-                fontWeight: 500,
-                fontSize: '10px',
-                letterSpacing: '3px',
+                fontWeight: 600,
+                fontSize: '11px',
+                letterSpacing: '1px',
                 textTransform: 'uppercase',
-                color: '#C9A96E',
-                backgroundColor: 'rgba(14,14,12,0.75)',
-                padding: '5px 10px',
-                backdropFilter: 'blur(4px)',
-                border: '0.5px solid rgba(201,169,110,0.3)',
+                color: '#111827',
+                backgroundColor: 'rgba(255,255,255,0.9)',
+                padding: '6px 12px',
+                borderRadius: 6,
+                border: '1px solid rgba(26,26,26,0.15)',
               }}
             >
               {afterLabel}

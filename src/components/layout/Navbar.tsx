@@ -19,63 +19,126 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md"
+      <header
+        className="fixed top-0 left-0 right-0 z-50"
         style={{
-          backgroundColor: 'rgba(14, 14, 12, 0.92)',
-          borderColor: 'rgba(139, 116, 68, 0.2)',
+          backgroundColor: '#1A1A1A',
+          borderBottom: '1px solid rgba(255,255,255,0.08)',
         }}
       >
-        <div className="mx-auto flex items-center justify-between px-8 h-16"
+        <div
+          className="relative mx-auto flex items-center px-8 lg:pl-0 lg:pr-8 h-16"
           style={{ maxWidth: '1280px' }}
         >
-          {/* Logo */}
-          <Link href="/" aria-label="AFV Cocinas — Inicio">
-            <Logo height={30} />
-          </Link>
+          {/* Logo with decorative slashes + V-notch — left aligned */}
+          <div className="logo-group" style={{ display: 'flex', alignItems: 'stretch', height: '100%', marginLeft: '-16px' }}>
+            {/* Stripe 1 */}
+            <div
+              style={{
+                width: '24px',
+                backgroundColor: '#FFFFFF',
+                transform: 'skewX(22deg)',
+                marginRight: '18px',
+              }}
+            />
+            {/* Stripe 2 */}
+            <div
+              style={{
+                width: '24px',
+                backgroundColor: '#FFFFFF',
+                transform: 'skewX(22deg)',
+                marginRight: '6px',
+              }}
+            />
+            {/* Main logo container */}
+            <Link
+              href="/"
+              aria-label="AFV Montajes — Inicio"
+              style={{
+                position: 'relative',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: '#FFFFFF',
+                padding: '0 32px',
+                height: '100%',
+                clipPath: 'polygon(0 0, 100% 0, 88% 100%, 12% 100%)',
+                textDecoration: 'none',
+              }}
+            >
+              <Logo height={30} color="#1A1A1A" />
+            </Link>
+          </div>
 
-          {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-sm transition-colors duration-300"
-                style={{
-                  fontFamily: 'var(--font-sans)',
-                  fontWeight: 400,
-                  color: '#9C9A8E',
-                  letterSpacing: '0.05em',
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#F2F0E8')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = '#9C9A8E')}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Desktop nav — centered absolutely */}
+          <nav className="hidden md:flex items-center gap-8 absolute left-1/2 top-1/2" style={{ transform: 'translate(-50%, -50%)' }}>
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href || pathname.startsWith(link.href + '/')
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="transition-colors duration-200"
+                  style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: '15px',
+                    fontWeight: isActive ? 500 : 400,
+                    color: isActive ? '#FFFFFF' : 'rgba(255,255,255,0.6)',
+                    paddingBottom: '4px',
+                    borderBottom: isActive ? '2px solid #E87B35' : '2px solid transparent',
+                    transition: 'all 0.2s ease',
+                  }}
+                  onMouseEnter={(e) => {
+                    if (!isActive) e.currentTarget.style.color = '#FFFFFF'
+                  }}
+                  onMouseLeave={(e) => {
+                    if (!isActive) e.currentTarget.style.color = 'rgba(255,255,255,0.6)'
+                  }}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
           </nav>
 
-          {/* Right: language switcher + CTA + Hamburger */}
-          <div className="flex items-center gap-4">
+          {/* Right: language switcher + Hamburger */}
+          <div className="flex items-center gap-4 ml-auto">
             {/* Language switcher — desktop */}
-            <div className="hidden md:flex items-center gap-1"
-              style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '11px', letterSpacing: '2px' }}
+            <div
+              className="hidden md:flex items-center gap-1"
+              style={{
+                fontFamily: 'var(--font-sans)',
+                fontWeight: 500,
+                fontSize: '14px',
+                letterSpacing: '1px',
+              }}
             >
               {locale === 'es' ? (
-                <span style={{ color: '#C9A96E' }}>ES</span>
+                <span style={{ color: '#E87B35' }}>ES</span>
               ) : (
-                <Link href={pathname} locale="es" style={{ color: '#6B6A60', transition: 'color 0.2s' }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = '#C9A96E')}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = '#6B6A60')}
-                >ES</Link>
+                <Link
+                  href={pathname}
+                  locale="es"
+                  style={{ color: 'rgba(255,255,255,0.4)', transition: 'color 0.2s' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = '#E87B35')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.4)')}
+                >
+                  ES
+                </Link>
               )}
-              <span style={{ color: '#3A3A37' }}>/</span>
+              <span style={{ color: 'rgba(255,255,255,0.2)' }}>/</span>
               {locale === 'en' ? (
-                <span style={{ color: '#C9A96E' }}>EN</span>
+                <span style={{ color: '#E87B35' }}>EN</span>
               ) : (
-                <Link href={pathname} locale="en" style={{ color: '#6B6A60', transition: 'color 0.2s' }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = '#C9A96E')}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = '#6B6A60')}
-                >EN</Link>
+                <Link
+                  href={pathname}
+                  locale="en"
+                  style={{ color: 'rgba(255,255,255,0.4)', transition: 'color 0.2s' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = '#E87B35')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.4)')}
+                >
+                  EN
+                </Link>
               )}
             </div>
 
@@ -88,21 +151,21 @@ export default function Navbar() {
               <span
                 className="block w-6 h-px transition-all duration-300 origin-center"
                 style={{
-                  backgroundColor: '#C9A96E',
+                  backgroundColor: '#FFFFFF',
                   transform: menuOpen ? 'translateY(4px) rotate(45deg)' : 'none',
                 }}
               />
               <span
                 className="block w-6 h-px transition-all duration-300"
                 style={{
-                  backgroundColor: '#C9A96E',
+                  backgroundColor: '#FFFFFF',
                   opacity: menuOpen ? 0 : 1,
                 }}
               />
               <span
                 className="block w-6 h-px transition-all duration-300 origin-center"
                 style={{
-                  backgroundColor: '#C9A96E',
+                  backgroundColor: '#FFFFFF',
                   transform: menuOpen ? 'translateY(-4px) rotate(-45deg)' : 'none',
                 }}
               />
@@ -120,40 +183,66 @@ export default function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
             className="fixed inset-0 z-40 flex flex-col pt-16 md:hidden"
-            style={{ backgroundColor: '#0E0E0C' }}
+            style={{ backgroundColor: '#1A1A1A' }}
           >
             <nav className="flex flex-col items-center justify-center flex-1 gap-8 px-8">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="font-serif text-3xl transition-colors duration-300"
-                  style={{
-                    fontFamily: 'var(--font-serif)',
-                    color: '#9C9A8E',
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = '#C9A96E')}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = '#9C9A8E')}
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href || pathname.startsWith(link.href + '/')
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-3xl transition-colors duration-200"
+                    style={{
+                      fontFamily: 'var(--font-heading)',
+                      fontWeight: 700,
+                      color: isActive ? '#E87B35' : '#FFFFFF',
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = '#E87B35')}
+                    onMouseLeave={(e) => {
+                      if (!isActive) e.currentTarget.style.color = '#FFFFFF'
+                    }}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              })}
 
               {/* Language switcher — mobile */}
-              <div className="flex items-center gap-2 mt-2"
-                style={{ fontFamily: 'var(--font-sans)', fontWeight: 500, fontSize: '12px', letterSpacing: '2px' }}
+              <div
+                className="flex items-center gap-2 mt-2"
+                style={{
+                  fontFamily: 'var(--font-sans)',
+                  fontWeight: 500,
+                  fontSize: '14px',
+                  letterSpacing: '1px',
+                }}
               >
                 {locale === 'es' ? (
-                  <span style={{ color: '#C9A96E' }}>ES</span>
+                  <span style={{ color: '#E87B35' }}>ES</span>
                 ) : (
-                  <Link href={pathname} locale="es" onClick={() => setMenuOpen(false)} style={{ color: '#6B6A60' }}>ES</Link>
+                  <Link
+                    href={pathname}
+                    locale="es"
+                    onClick={() => setMenuOpen(false)}
+                    style={{ color: 'rgba(255,255,255,0.5)' }}
+                  >
+                    ES
+                  </Link>
                 )}
-                <span style={{ color: '#3A3A37' }}>/</span>
+                <span style={{ color: 'rgba(255,255,255,0.2)' }}>/</span>
                 {locale === 'en' ? (
-                  <span style={{ color: '#C9A96E' }}>EN</span>
+                  <span style={{ color: '#E87B35' }}>EN</span>
                 ) : (
-                  <Link href={pathname} locale="en" onClick={() => setMenuOpen(false)} style={{ color: '#6B6A60' }}>EN</Link>
+                  <Link
+                    href={pathname}
+                    locale="en"
+                    onClick={() => setMenuOpen(false)}
+                    style={{ color: 'rgba(255,255,255,0.5)' }}
+                  >
+                    EN
+                  </Link>
                 )}
               </div>
             </nav>

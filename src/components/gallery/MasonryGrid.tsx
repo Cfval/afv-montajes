@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 
@@ -17,6 +18,7 @@ interface GalleryImage {
 export default function MasonryGrid({ images }: { images: GalleryImage[] }) {
   const [visible, setVisible] = useState(PAGE_SIZE)
   const [lightboxIndex, setLightboxIndex] = useState(-1)
+  const t = useTranslations('gallery')
 
   const visibleImages = images.slice(0, visible)
   const hasMore = visible < images.length
@@ -51,15 +53,15 @@ export default function MasonryGrid({ images }: { images: GalleryImage[] }) {
                 fill
                 priority={i === 0}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                style={{ objectFit: 'cover', transition: 'transform 0.7s ease' }}
-                className="group-hover:scale-[1.04]"
+                style={{ objectFit: 'cover', transition: 'transform 0.6s ease' }}
+                className="group-hover:scale-[1.02]"
               />
               {/* Hover overlay */}
               <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-                style={{ backgroundColor: 'rgba(14,14,12,0.3)' }}
+                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-250 flex items-center justify-center"
+                style={{ backgroundColor: 'rgba(255,255,255,0.35)' }}
               >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(201,169,110,0.8)" strokeWidth="1.5">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#E87B35" strokeWidth="1.8">
                   <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
                 </svg>
               </div>
@@ -73,29 +75,9 @@ export default function MasonryGrid({ images }: { images: GalleryImage[] }) {
         <div className="flex justify-center mt-12 mb-4">
           <button
             onClick={() => setVisible((v) => v + PAGE_SIZE)}
-            style={{
-              background: 'transparent',
-              border: '1px solid #C9A96E',
-              padding: '14px 32px',
-              cursor: 'pointer',
-              fontFamily: 'var(--font-sans)',
-              fontWeight: 500,
-              fontSize: '11px',
-              letterSpacing: '2.5px',
-              textTransform: 'uppercase',
-              color: '#C9A96E',
-              transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#C9A96E'
-              e.currentTarget.style.color = '#0E0E0C'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = 'transparent'
-              e.currentTarget.style.color = '#C9A96E'
-            }}
+            className="btn-outline"
           >
-            Ver más trabajos
+            {t('viewMoreButton')}
           </button>
         </div>
       )}
